@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WeatherGuru</string>
+    <string name="current_city">Kalyani</string>
+    <string name="good_morning">Good morning</string>
+    <string name="_21">21</string>
+    <string name="more_button_in_home_page">more button in home page</string>
+    <string name="precipitation">Precipitation</string>
+    <string name="_87">87 %</string>
+</resources>
