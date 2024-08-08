@@ -6,4 +6,6 @@
     <string name="more_button_in_home_page">more button in home page</string>
     <string name="precipitation">Precipitation</string>
     <string name="_87">87 %</string>
+    <string name="back">Back</string>
+    <string name="sun">Sun</string>
 </resources>

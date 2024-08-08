@@ -5,8 +5,369 @@
     android:id="@+id/forecast_parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/next_page_color"
     tools:context=".ForecastLayout">
 
-   
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/forecast_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/start_end_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/forecast_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_buttons_multimedia_svgrepo_com"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.071"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.213" />
+
+
+        <LinearLayout
+            android:id="@+id/linearlayot1"
+            android:layout_width="171dp"
+            android:layout_height="138dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/back"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    app:tint="@color/white"
+                    android:id="@+id/forecast_image2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/calendar_date_schedule_svgrepo_com"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.071"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.213" />
+
+                <TextView
+
+                    android:fontFamily="@font/poppins_regular"
+                    android:id="@+id/textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="This Week"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="166dp"
+            android:layout_height="141dp"
+            android:src="@drawable/night_cloud"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayot11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forecast_layout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearlayot10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:alpha="0.7"
+                    android:text="Sun"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/sunny"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sunny"
+                    android:alpha="0.7"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    />
+
+                <TextView
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17°"
+                    android:textColor="@color/white"
+                    android:textSize="60sp" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.3"
+            android:background="@color/white" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearlayot12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:alpha="0.7"
+                    android:text="Mon"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rainy"
+                    android:alpha="0.7"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16°"
+                    android:textColor="@color/white"
+                    android:textSize="60sp" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.3"
+            android:background="@color/white" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearlayot13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thu"
+                    android:fontFamily="@font/poppins_regular"
+                    android:alpha="0.7"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Storm"
+                    android:alpha="0.7"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21°"
+                    android:textColor="@color/white"
+                    android:textSize="60sp" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.3"
+            android:background="@color/white" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearlayot15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_marginStart="15sp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:alpha="0.7"
+                    android:text="Wed"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Snow"
+                    android:alpha="0.7"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15°"
+                    android:textColor="@color/white"
+                    android:textSize="60sp" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.3"
+            android:background="@color/white" />
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
